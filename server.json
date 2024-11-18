@@ -1,0 +1,31 @@
+{
+ "transactions": [
+    {
+        "id" :1, 
+        "description": "Desenvolvimento",
+        "type": "income",
+        "category" : "Venda", 
+        "price": 14000, 
+        "createdAt": "2024-11-18T22:07:40.618Z"
+
+    }, 
+    {
+        "id" :2, 
+        "description": "Hambuguer",
+        "type": "outcome",
+        "category" : "Alimentação", 
+        "price": 500, 
+        "createdAt": "2024-11-18T22:07:40.618Z"
+
+    }, 
+    {
+        "id" :2, 
+        "description": "Educação",
+        "type": "outcome",
+        "category" : "Alimentação", 
+        "price": 100, 
+        "createdAt": "2024-11-18T22:07:40.618Z"
+
+    }
+ ]
+}
