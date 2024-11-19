@@ -47,7 +47,7 @@ Error generating stack: `+i.message+`
 }
 :focus{
     outline: 0;
-    box-shadow: 0 0 0 2px ${e=>e.theme["green-500"]};
+    box-shadow: 0 0 0 2px ${e=>e.theme["purple-500"]};
 } 
 
 body{
@@ -174,7 +174,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${t.do
     button[type="submit"] {
       height: 58px;
       border: 0;
-      background: ${e=>e.theme["green-500"]};
+      background: ${e=>e.theme["purple-500"]};
       color: ${e=>e.theme.white};
       font-weight: bold;
       border-radius: 6px;
@@ -182,7 +182,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${t.do
 
       cursor: pointer;
       &:hover {
-        background: ${e=>e.theme["green-700"]};
+        background: ${e=>e.theme["purple-700"]};
         transition: background-color 0.2s;
       }
     }
@@ -214,7 +214,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${t.do
   color: ${e=>e.theme["gray-100"]};
 
   svg {
-    color: ${e=>e.variant==="income"?e.theme["green-300"]:e.theme["red-500"]};
+    color: ${e=>e.variant==="income"?e.theme["purple-500"]:e.theme["red-500"]};
   }
 
   &[data-state="unchecked"]:hover {
@@ -259,10 +259,10 @@ For more information, see https://radix-ui.com/primitives/docs/components/${t.do
     font-size: 2rem;
   }
 
-  ${e=>e.variant==="green"&&Vs`
-      background-color: ${e.theme["green-700"]};
+  ${e=>e.variant==="purple"&&Vs`
+      background-color: ${e.theme["purple-700"]};
     `}
-`,ea=v.createContext({});function _y({children:e}){const[t,n]=v.useState([]);async function r(){fetch("http://localhost:3000/transactions").then(o=>o.json()).then(o=>n(o))}return v.useEffect(()=>{r()},[]),E.jsx(ea.Provider,{value:{transactions:t},children:e})}function Ny(){const{transactions:e}=v.useContext(ea),t=e.reduce((n,r)=>(r.type=="income"?(n.income+=r.price,n.total+=r.price):(n.outcome+=r.price,n.total-=r.price),n),{income:0,outcome:0,total:0});return E.jsxs(Py,{children:[E.jsxs(Fl,{children:[E.jsxs("header",{children:[E.jsx("span",{children:"Entradas"}),E.jsx(bs,{size:32,color:"#00b37e"})]}),E.jsx("strong",{children:t.income})]}),E.jsxs(Fl,{children:[E.jsxs("header",{children:[E.jsx("span",{children:"Saídas"}),E.jsx(qs,{size:32,color:"#f75a68"})]}),E.jsx("strong",{children:t.outcome})]}),E.jsxs(Fl,{variant:"green",children:[E.jsxs("header",{children:[E.jsx("span",{children:"Total"}),E.jsx(yh,{size:32,color:"#fff"})]}),E.jsx("strong",{children:t.total})]})]})}const Ry=we.form`
+`,ea=v.createContext({});function _y({children:e}){const[t,n]=v.useState([]);async function r(){fetch("http://localhost:3000/transactions").then(o=>o.json()).then(o=>n(o))}return v.useEffect(()=>{r()},[]),E.jsx(ea.Provider,{value:{transactions:t},children:e})}function Ny(){const{transactions:e}=v.useContext(ea),t=e.reduce((n,r)=>(r.type=="income"?(n.income+=r.price,n.total+=r.price):(n.outcome+=r.price,n.total-=r.price),n),{income:0,outcome:0,total:0});return E.jsxs(Py,{children:[E.jsxs(Fl,{children:[E.jsxs("header",{children:[E.jsx("span",{children:"Entradas"}),E.jsx(bs,{size:32,color:"#8b5cf6"})]}),E.jsx("strong",{children:t.income})]}),E.jsxs(Fl,{children:[E.jsxs("header",{children:[E.jsx("span",{children:"Saídas"}),E.jsx(qs,{size:32,color:"#f75a68"})]}),E.jsx("strong",{children:t.outcome})]}),E.jsxs(Fl,{variant:"purple",children:[E.jsxs("header",{children:[E.jsx("span",{children:"Total"}),E.jsx(yh,{size:32,color:"#fff"})]}),E.jsx("strong",{children:t.total})]})]})}const Ry=we.form`
   display: flex;
   gap: 1rem;
 
@@ -283,9 +283,9 @@ For more information, see https://radix-ui.com/primitives/docs/components/${t.do
     display: flex;
     align-items: center;
     gap: 0.75rem; 
-    color: ${e=>e.theme["green-300"]};
+    color: ${e=>e.theme["purple-500"]};
     justify-content: center;
-    border: 1px solid ${e=>e.theme["green-300"]};
+    border: 1px solid ${e=>e.theme["purple-500"]};
     padding: 1rem;
     background-color: transparent;
     font-weight: bold;
@@ -293,8 +293,8 @@ For more information, see https://radix-ui.com/primitives/docs/components/${t.do
     cursor: pointer;
 
     &:hover {
-      background: ${e=>e.theme["green-500"]};
-      border-color: ${e=>e.theme["green-500"]};
+      background: ${e=>e.theme["purple-700"]};
+      border-color: ${e=>e.theme["purple-700"]};
       color: ${e=>e.theme.white};
 
       transition: background-color 0.2s, color 0.2s, border-color 0.2s;
