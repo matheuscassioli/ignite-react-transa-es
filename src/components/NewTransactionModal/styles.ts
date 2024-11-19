@@ -41,7 +41,7 @@ export const Content = styled(Dialog.Content)`
     button[type="submit"] {
       height: 58px;
       border: 0;
-      background: ${(props) => props.theme["green-500"]};
+      background: ${(props) => props.theme["purple-500"]};
       color: ${(props) => props.theme.white};
       font-weight: bold;
       border-radius: 6px;
@@ -49,7 +49,7 @@ export const Content = styled(Dialog.Content)`
 
       cursor: pointer;
       &:hover {
-        background: ${(props) => props.theme["green-700"]};
+        background: ${(props) => props.theme["purple-700"]};
         transition: background-color 0.2s;
       }
     }
@@ -95,7 +95,7 @@ export const TransactionTypeButton = styled(
   svg {
     color: ${(props) =>
       props.variant === "income"
-        ? props.theme["green-300"]
+        ? props.theme["purple-500"]
         : props.theme["red-500"]};
   }
 

@@ -15,8 +15,7 @@
         "type": "outcome",
         "category" : "Alimentação", 
         "price": 500, 
-        "createdAt": "2024-11-18T22:07:40.618Z"
-
+        "createdAt": "2024-11-18T22:07:40.618Z" 
     }, 
     {
         "id" :2, 

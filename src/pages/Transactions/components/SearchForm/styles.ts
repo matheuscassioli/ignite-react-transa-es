@@ -21,9 +21,9 @@ export const FormContainer = styled.form`
     display: flex;
     align-items: center;
     gap: 0.75rem; 
-    color: ${(props) => props.theme["green-300"]};
+    color: ${(props) => props.theme["purple-500"]};
     justify-content: center;
-    border: 1px solid ${(props) => props.theme["green-300"]};
+    border: 1px solid ${(props) => props.theme["purple-500"]};
     padding: 1rem;
     background-color: transparent;
     font-weight: bold;
@@ -31,8 +31,8 @@ export const FormContainer = styled.form`
     cursor: pointer;
 
     &:hover {
-      background: ${(props) => props.theme["green-500"]};
-      border-color: ${(props) => props.theme["green-500"]};
+      background: ${(props) => props.theme["purple-700"]};
+      border-color: ${(props) => props.theme["purple-700"]};
       color: ${(props) => props.theme.white};
 
       transition: background-color 0.2s, color 0.2s, border-color 0.2s;

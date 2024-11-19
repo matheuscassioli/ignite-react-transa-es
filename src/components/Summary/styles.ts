@@ -14,7 +14,7 @@ export const SummaryContainer = styled.div`
 `;
 
 interface SummaryCardProps {
-  variant?: "green";
+  variant?: "purple";
 }
 
 export const SummaryCard = styled.div<SummaryCardProps>`
@@ -36,8 +36,8 @@ export const SummaryCard = styled.div<SummaryCardProps>`
   }
 
   ${(props) =>
-    props.variant === "green" &&
+    props.variant === "purple" &&
     css`
-      background-color: ${props.theme["green-700"]};
+      background-color: ${props.theme["purple-700"]};
     `}
 `;
